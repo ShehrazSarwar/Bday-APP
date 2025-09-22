@@ -173,12 +173,13 @@ st.markdown("""
 <p class="birthday-subtitle">Hope your special day is filled with happiness, joy, and wonderful memories!✨</p>
 """, unsafe_allow_html=True)
 
-# Surprise Button
-if st.button("🎈 Click Here for a Surprise! 🎈", key="surprise_btn", help="Something magical awaits..."):
-    st.session_state.show_surprise = True
-    st.session_state.show_balloons = True
-    st.session_state.music_started = True
-    st.rerun()
+col1, col2, col3 = st.columns([1, 2, 1])  # middle column is wider
+with col2:
+    if st.button("🎈 Click Here for a Surprise! 🎈", key="surprise_btn", help="Something magical awaits..."):
+        st.session_state.show_surprise = True
+        st.session_state.show_balloons = True
+        st.session_state.music_started = True
+        st.rerun()
 
 # Music
 if st.session_state.music_started:
