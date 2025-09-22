@@ -185,7 +185,7 @@ with col2:
 if st.session_state.music_started:
     st.markdown("""
     <audio autoplay loop>
-        <source src="https://muz9.z3.fm/c/8b/one_direction_-_one_direction_-_steal_my_girl_(zf.fm).mp3" type="audio/wav">
+        <source src="https://cdn.trendybeatz.com/audio/One-Direction-Little-Things-(TrendyBeatz.com).mp3" type="audio/wav">
     </audio>
     """, unsafe_allow_html=True)
 
